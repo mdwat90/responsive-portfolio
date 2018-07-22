@@ -1,0 +1,376 @@
+
+/* Header CSS */
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px 0px grey;
+}
+    
+
+nav.head::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+/* Body CSS */
+
+html, body {
+    background-image: url("../../assets/images/qbkls.png");
+    margin: 0px;
+    padding: 0px;
+    color: #777777;
+    height: 100%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+div.container {
+    min-height: 100%;
+    position: relative;
+}
+
+div.fullname {
+    float: left;
+    margin-left: 10vw;
+    background-color: #D4202A;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Georgia', Times, serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    margin-right: 12vw;
+    margin-top: 2vw;
+}
+
+li {
+    display: inline-block;
+}
+
+#about {
+    border-right: 1px solid #e8e8e8;
+    padding-right: 30px;
+}
+
+#portfolio {
+    border-right: 1px solid #e8e8e8;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#contact {
+    padding-left: 30px;
+}
+
+li a:link {
+    text-decoration: none;
+    color: #777777;
+}
+
+li a:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: #D4202A;
+}
+
+
+div.body {
+    padding-bottom: 150px;
+    height: 100%;
+}
+
+h2 {
+    color: #grey;
+    font-size: 30px;
+    font-family: 'Georgia', Times, serif;
+}
+
+
+
+
+/* Footer CSS */
+
+footer {
+    text-align: center;
+    background-color: #666666;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    color: #ffffff;
+    font-size: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top: 10px solid #D4202A;
+}
+
+
+
+
+/* Home Page CSS */
+
+.aboutinfo {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    width: 75%;
+    position:relative;
+    top: 50px;
+    left: 10vw;
+    padding: 20px;
+    content: "";
+    clear: both;
+    display: table;
+    line-height: 35px;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+img.self {
+    float: left;
+    width: 25%;
+    height: 30%;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+/* Portfolio Page CSS */
+
+.portfoliomain {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    width: 75%;
+    position:relative;
+    top: 50px;
+    left: 10vw;
+    padding: 20px;
+    content: "";
+    clear: both;
+    display: table;
+    line-height: 35px;
+}
+
+.portfolio {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.portfolio a {
+    margin: auto;
+}
+
+.polaroid {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    padding: 10px; 
+}
+
+div#container {
+    text-align: center;
+}
+
+
+
+
+/* Contact Page CSS */
+
+.contact {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    width: 75%;
+    position:relative;
+    top: 50px;
+    left: 10vw;
+    padding: 20px;
+    content: "";
+    clear: both;
+    display: table;
+    line-height: 35px;
+}
+
+.firstname {
+    width: 100%;
+    height: 30px;
+}
+
+.email {
+    width: 100%;
+    height: 30px;
+}
+
+.textarea {
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+
+.title {
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    background-color: #D4202A;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 75px;
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+    div.fullname {
+        width: 95%;
+        background-color: #D4202A;
+        color: #ffffff;
+        margin-left: 0px;
+        text-align: center;
+        font-family: 'Georgia', Times, serif;
+    }
+    
+    img.self {
+        width: 100%;
+        height: 25%;
+        margin-bottom: 10px;
+    }
+    
+    .aboutinfo {
+        width: 80%;
+        position:relative;
+        top: 50px;
+        left: 5vw;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    div.fullname {
+        width: 95%;
+        background-color: #D4202A;
+        color: #ffffff;
+        margin-left: 0px;
+        text-align: center;
+        font-family: 'Georgia', Times, serif;
+    }
+    
+    img.self {
+        width: 100%;
+        height: 25%;
+        margin-bottom: 10px;
+    }
+    
+    .aboutinfo {
+        width: 80%;
+        position:relative;
+        top: 50px;
+        left: 5vw;
+        padding: 20px;
+    }
+
+    .portfoliomain {
+        width: 80%;
+        position:relative;
+        top: 50px;
+        left: 5vw;
+        padding: 10px;
+    }
+
+    .contact {
+        width: 80%;
+        position:relative;
+        top: 50px;
+        left: 5vw;
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 640px) {
+    div.fullname {
+        width: 40%;
+        margin-left: 15px;
+        text-align: center;
+    }
+
+    ul {
+        margin-right: 5vw;
+    }
+    
+    img.self {
+        width: 40%;
+        height: 25%;
+        margin-bottom: 10px;
+    }
+    
+    .aboutinfo {
+        width: 90%;
+        position:relative;
+        top: 50px;
+        left: 2vw;
+        padding: 20px;
+    }
+
+    .portfoliomain {
+        width: 90%;
+        position:relative;
+        top: 50px;
+        left: 3vw;
+        padding: 10px;
+    }
+
+    .contact {
+        width: 90%;
+        position:relative;
+        top: 50px;
+        left: 2vw;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 980px) and (min-width: 768px) {
+    ul {
+        margin-right: 5vw;
+    }
+    
+    .aboutinfo {
+        width: 60%;
+        position:relative;
+        top: 50px;
+        left: 2vw;
+        padding: 20px;
+    }
+
+    .portfoliomain {
+        width: 60%;
+        position:relative;
+        top: 50px;
+        left: 3vw;
+        padding: 10px;
+    }
+
+    .contact {
+        width: 60%;
+        position:relative;
+        top: 50px;
+        left: 2vw;
+        padding: 20px;
+    }
+}
